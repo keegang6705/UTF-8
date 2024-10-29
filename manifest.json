@@ -1,0 +1,25 @@
+{
+  "name": "UTF-8",
+  "version": "1.0",
+  "version_name": "2024.10.29-1-chrome",
+  "description": "keep web pages element being utf-8",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "tabs", "storage", "scripting"],
+  "host_permissions": ["https://*/*","http://*/*"],
+  "icons": {
+    "128": "/image/col_studio.png"
+  },
+  "action": {
+    "default_popup": "/popup/popup.html",
+    "default_icon": "/image/col_studio.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://*/*","http://*/*"]
+    }
+  ],
+  "background": {
+    "service_worker": "/scripts/background.js"
+  }
+}
