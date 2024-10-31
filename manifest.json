@@ -1,7 +1,7 @@
 {
   "name": "UTF-8",
-  "version": "1.0",
-  "version_name": "2024.10.29-1-chrome",
+  "version": "1.1",
+  "version_name": "2024.10.31-1-chrome",
   "description": "keep web pages element being utf-8",
   "manifest_version": 3,
   "permissions": ["activeTab", "tabs", "storage", "scripting"],

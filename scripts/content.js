@@ -28,7 +28,7 @@ function repairAllTextContent() {
 }
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === "run") {
-        console.log("Running repair text function...");
+        console.log("utf8/script/content.js: Repairing");
         repairAllTextContent();
         sendResponse({ status: "completed" });
     }
