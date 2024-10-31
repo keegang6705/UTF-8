@@ -17,7 +17,7 @@ function repairAllTextContent() {
                 }
             });
         }
-        if (el.tagName === 'BUTTON' || el.tagName === 'TEXTAREA') {
+        if (el.tagName === 'TEXTAREA') {
             el.textContent = repairText(el.textContent);
         }
         
